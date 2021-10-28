@@ -1,3 +1,6 @@
+/* ----- Color Palette ----- */
+/* Light Purple      #c08af7 */
+
 /* Reset */
 * {
     margin: 0;
@@ -7,7 +10,113 @@
 
 /* Main Styling */
 html, body {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.7em;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    
+    background-color: #333;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0;
+}
+
+h1, h2, h3 {
+    padding-bottom: 20px;
+}
+
+/* Utility Classes */
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1100px;
+}
+
+.lead {
+    font-size: 125%;
+}
+
+.text-primary {
+    color: #c08af7;
+}
+
+.btn {
+    font-size: 112.5%;
+    display: inline-block;
+    padding: 13px 20px;
+    background-color: #333;
+    border: none;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+    color: #333;
+    background-color: #c08af7;
+}
+
+/* Navbar */
+.navbar .logo {
+    float: left;
+    font-size: 150%;
+    margin-top: 20px;
+}
+
+.navbar ul {
+    float: right;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 20px;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:active,
+.navbar ul li a.current {
+    color: #c08af7;
+    background-color: #444;
+}
+
+/* Showcase */
+.section-showcase {
+    height: 600px;
+    text-align: center;
+    background-image: linear-gradient(#000A, #000A), url('../img/showcase.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.section-showcase .container {
+    padding-top: 170px;
+}
+
+.section-showcase h1 {
+    font-size: 375%;
+    line-height: 1.2em;
+}
+
+.section-showcase p {
+    padding-bottom: 20px;
 }
